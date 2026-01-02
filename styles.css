@@ -1,0 +1,92 @@
+@font-face {
+    font-family: LuckyStar;
+    src: url(res/luckystar/luckystar.otf);
+}
+body{
+    background-color:rgba(6, 202, 252, 0.685);
+}
+.site_name{
+    background-color:rgba(0, 255, 42, 0.658);
+    padding:20px;
+    width: 75%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    border: 3px solid white;
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+    align-items: center;
+}
+.site_name h1{
+    font-size:48px;
+    font-family: Arial, sans-serif;
+    text-align:center;
+    color:rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.Navigator{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    background-color: rgb(155, 148, 148);
+    width: 50%;
+    justify-content: space-evenly;
+    margin: auto;
+    height: 50px;
+    align-items: center;
+    border-radius: 8px;
+}
+.Navigator a{
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-weight: 100;
+    color: white;
+}
+
+
+.bio{
+    font-family: Arial, sans-serif;
+    width: 300px;
+    border-radius: 8x;
+    backdrop-filter: blur(20px);
+    background-color: rgba(235, 245, 100, 0.685);
+    box-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
+    border: 3px solid;
+    border-color: gray;
+    border-radius:8px;
+    display: flex;
+    padding: 5px;
+ }
+.pfp{
+    display: flex;
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+    border: 3px solid rgba(64, 231, 231, 0.678);
+}
+.scl_img{
+    display: flex;
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    border: 3px solid rgba(64, 231, 231, 0.678);
+}
+.scl_img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.bio h3{
+    font-size:24px;
+    margin-top:10px;
+}
+.bio p{
+    font-size:16px;
+    margin-top:10px;
+    justify-content: center;
+}
