@@ -1,14 +1,12 @@
-@font-face {
-    font-family: LuckyStar;
-    src: url(res/luckystar/luckystar.otf);
-}
+
 body{
-    background-color:rgba(6, 202, 252, 0.685);
+    background-color:rgb(12, 64, 77);
+    max-width: 100%;
 }
 .site_name{
     background-color:rgba(0, 255, 42, 0.658);
-    padding:20px;
-    width: 75%;
+    padding:10px;
+    width: 50%;
     height: 50px;
     display: flex;
     justify-content: center;
@@ -29,7 +27,8 @@ body{
 .Navigator{
     display: flex;
     justify-content: center;
-    gap: 20px;
+    padding: 10px;
+    border: solid white;
     margin-bottom: 20px;
     font-size: 25px;
     background-color: rgb(155, 148, 148);
@@ -46,9 +45,10 @@ body{
     font-weight: 100;
     color: white;
 }
-
-
 .bio{
+    position: absolute;
+    cursor: move;
+    left: 40%;
     font-family: Arial, sans-serif;
     width: 300px;
     border-radius: 8x;
@@ -89,4 +89,66 @@ body{
     font-size:16px;
     margin-top:10px;
     justify-content: center;
+}
+.cont{
+    position: absolute;
+    cursor: move;
+    left: 10%;
+    top: 200px;
+    font-family: Arial, sans-serif;
+    width: 300px;
+    border-radius: 8x;
+    backdrop-filter: blur(20px);
+    background-color: rgba(0, 153, 255, 0.685);
+    box-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
+    border: 3px solid;
+    border-color: gray;
+    border-radius:8px;
+    display: flex;
+    padding: 5px;
+ }
+.vid{
+    position: absolute;
+    cursor: move;
+    left: 60%;
+    top: 200px;
+    font-family: Arial, sans-serif;
+    color: white;
+    width: 320px;
+    border-radius: 8x;
+    backdrop-filter: blur(20px);
+    background-color: rgba(0, 0, 0, 0.815);
+    box-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
+    border: 3px solid;
+    border-color: gray;
+    border-radius:8px;
+    display: flex;
+    position: absolute;
+}
+.vid video{
+    width: 250px;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    padding: 5px;
+    position: absolute;
+    top: 50px;
+    left: 5px;
+}
+.television{
+    display: flex;
+    height: 195px;
+    width: 300px;
+    margin: auto;
+    position: relative;
+    top: -13px;
+}
+
+@media screen and (max-width: 2000px){
+
+}
+@media screen and (max-width: 990px){
+  
+}
+@media screen and (max-width: 600px){
 }
