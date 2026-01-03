@@ -93,8 +93,7 @@ body{
 .cont{
     position: absolute;
     cursor: move;
-    left: 10%;
-    top: 200px;
+    left: 20%;
     font-family: Arial, sans-serif;
     width: 300px;
     border-radius: 8x;
@@ -111,7 +110,6 @@ body{
     position: absolute;
     cursor: move;
     left: 60%;
-    top: 200px;
     font-family: Arial, sans-serif;
     color: white;
     width: 320px;
