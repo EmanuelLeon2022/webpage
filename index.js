@@ -56,6 +56,8 @@ var channelSources = [
   "res/videos/fish.mp4"
 ];
 
+console.log(channelSources[0]);
+
 function playPauseVideo() {
   var channel = document.getElementById("channel");
   if (channel.paused) {
@@ -73,11 +75,7 @@ function changeChannel() {
     video.play();
 }
 
-function muteUnmute() {
+function muteUnmuteVideo() {
   var channel = document.getElementById("channel");
-  if (channel.muted) {
-    channel.muted = false;
-  } else {
-    channel.muted = true;
-  }
+  channel.muted = !channel.muted;
 }
