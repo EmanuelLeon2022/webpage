@@ -45,16 +45,7 @@ function dragElement(elmnt) {
   }
 }
 
-var channel = document.getElementById("channel");
-
-function playPauseVideo() {
-  if (channel.paused) {
-    channel.play();
-  } else {
-    channel.pause();
-  }
-}
-
+// var channel = document.getElementById("channel");
 var channelSources = [
   "res/videos/Miku.mp4",
   "res/videos/Teto.mp4",
@@ -65,10 +56,28 @@ var channelSources = [
   "res/videos/fish.mp4"
 ];
 
+function playPauseVideo() {
+  var channel = document.getElementById("channel");
+  if (channel.paused) {
+    channel.play();
+  } else {
+    channel.pause();
+  }
+}
+
 function changeChannel() {
     var video = document.getElementById("channel");
     i = Math.floor(Math.random() * channelSources.length -1)+1;
     video.src = channelSources[i];
     video.load();
     video.play();
+}
+
+function muteUnmute() {
+  var channel = document.getElementById("channel");
+  if (channel.muted) {
+    channel.muted = false;
+  } else {
+    channel.muted = true;
+  }
 }
